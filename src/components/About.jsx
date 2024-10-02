@@ -15,7 +15,14 @@ const About = ({ initialCount = 10 }) => {
         <div>
             <p>Counter: {count}</p>
             <button onClick={decrement}>Decrease</button> 
-            <button onClick={increase}>Increase</button> 
+            <button onClick={increase}>Increase</button>
+            <p>Hello, {name}</p>
+            <input
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
         </div>
     );
 };
