@@ -21,6 +21,9 @@ const Navbar = () => {
                 <li style={styles.navItem}>
                     <Link to="/Props" style={styles.navLink}>Props</Link>
                 </li>
+                <li style={styles.navItem}>
+                    <Link to="/class&constructor" style={styles.navLink}>Class&const</Link>
+                </li>
             </ul>
         </nav>
     );
