@@ -1,36 +1,27 @@
- import React from 'react';
- 
- 
- 
- class About extends React.Component {
-      constructor(props) {
-          super(props);
-          this.state = {
-              count: props.initialCount || 10,
-              name: ''
-          };
-      }
+import React from 'react';
 
-      decrement = () => {
-          this.setState(prevState => ({
-              count: prevState.count - 1
-          }));
-      };
+class About extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {city: "kigali", Name: "Alice", Age: 50};
+    }
 
-      increase = () => {
-          this.setState(prevState => ({
-              count: prevState.count + 1
-          }));
-      };
+    change = () => {
+        alert("updating......");
+        this.setState({city: "kampala"});
+        console.log(this.state);
+    }
 
-      render() {
-          return (
-              <div>
-                  <p>Counter: {this.state.count}</p>
-                  <button onClick={this.decrement}>Decrease</button>
-                  <button onClick={this.increase}>Increase</button>
-              </div>
-          );
-      }
-  }
-  export default About;
+    render() {
+        return (
+            <div>
+                <h1>Contact us on: {this.state.Name}!</h1>
+                <p>And the city is: {this.state.city}</p>
+                <p>The age is: {this.state.Age}</p>
+                <button onClick={this.change}>Update information</button>
+            </div>
+        );
+    }
+}
+
+export default About;
