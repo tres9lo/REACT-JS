@@ -1,0 +1,53 @@
+/* Styles for the Not Found page */
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Set a font */
+  }
+  
+  .not-found-content {
+    max-width: 400px; /* Limit the width */
+    padding: 20px; /* Add some padding */
+    background-color: white; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .not-found h1 {
+    font-size: 72px; /* Large font for the error code */
+    color: #dc3545; /* Bootstrap danger color for emphasis */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .not-found h2 {
+    font-size: 24px; /* Medium font for subtitle */
+    color: #343a40; /* Dark gray color */
+    margin: 10px 0; /* Top and bottom margin */
+  }
+  
+  .not-found p {
+    font-size: 16px; /* Standard font size for text */
+    color: #6c757d; /* Muted text color */
+    margin: 10px 0; /* Top and bottom margin */
+  }
+  
+  .home-button {
+    display: inline-block; /* Make it a block for better spacing */
+    padding: 10px 20px; /* Padding for button */
+    margin-top: 20px; /* Space above the button */
+    color: white; /* Text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
