@@ -10,13 +10,21 @@ import Handle from './components/handlehome'
 import Class from './components/class&constructor'; // Create this component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Adjust the path as necessary
+import User from './users/user';
+import Profile from './users/profile';
+
+import Api from './components/api1';
+
+import Ref1 from './components/ref1';
+import Context from './components/context';
+import Account from './users/account';
 
 
 
       const App = () => {
     return (
         <Router>
-            <Handle/>
+          
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -26,7 +34,15 @@ import Navbar from './components/Navbar'; // Adjust the path as necessary
                 <Route path="/Props" element={<Props />} />
                 <Route path="/class&constructor" element={<Class />} />
                 <Route path="/handlehome" element={<Handle />} />
+                <Route path="/api1" element={<Api />} />
+                <Route path="/ref1" element={<Ref1 />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="User" element={<User />}>
+                <Route path="profile" element={<Profile />} />
+                <Route path="account" element={<Account />} />
+                <Route path="context" element={<Context />} />
+
+                </Route>
             </Routes>
         </Router>
     );

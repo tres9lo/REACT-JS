@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav style={styles.navbar}>
-            <h1 style={styles.logo}>PROJECT3</h1>
             <ul style={styles.navLinks}>
                 <li style={styles.navItem}>
                     <Link to="/" style={styles.navLink}>Home</Link>
@@ -23,6 +22,21 @@ const Navbar = () => {
                 </li>
                 <li style={styles.navItem}>
                     <Link to="/class&constructor" style={styles.navLink}>Class&const</Link>
+                </li>
+                <li style={styles.navItem}>
+                    <Link to="/User" style={styles.navLink}>User</Link>
+                </li>
+                <li style={styles.navItem}>
+                    <Link to="/handlehome" style={styles.navLink}>Handle</Link>
+                </li>
+                <li style={styles.navItem}>
+                    <Link to="/Api1" style={styles.navLink}>Api</Link>
+                </li>
+                <li style={styles.navItem}>
+                    <Link to="/Ref1" style={styles.navLink}>Ref1</Link>
+                </li>
+                <li style={styles.navItem}>
+                    <Link to="/context" style={styles.navLink}>context</Link>
                 </li>
             </ul>
         </nav>
